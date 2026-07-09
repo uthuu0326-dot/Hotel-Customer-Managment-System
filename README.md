@@ -180,12 +180,33 @@ python main.py
 
 # 📸 Application Screenshots
 
-## 🏠 Home Interface
+##  🖥️ 1. Main Graphical User Interface (GUI) Detailed Overview
 
 ![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
 
-**Description:**  
-This is the main interface of the Hotel Customer Management System. Users can enter customer details and access all customer management functions through a simple graphical user interface.
+![Main GUI]([IMAGE_LINK_HERE_FOR_SCREENSHOT_3])
+
+### 📌 Overview
+The desktop front-end interface is engineered using Python's robust **Tkinter** library. It provides an intuitive, centralized dashboard designed specifically for hotel front-desk operators to handle real-time customer registrations, room allocations, and record management without needing to interact with raw databases.
+
+### 🛠️ Detailed Component Breakdown
+
+#### A. Data Input Architecture (Form Fields)
+The interface features three high-visibility data entry components mapped directly to backend variables:
+* **Customer Name Field:** A standard text entry widget designed to accept alphabetical characters representing the guest's official full name.
+* **Phone Number Field:** A validated input area dedicated to capturing contact details, crucial for reservation confirmations and customer communication.
+* **Room Number Field:** An integer-specific entry box where operators assign an available room to the guest, preventing operational confusion.
+
+#### B. Control System (CRUD Operations Panel)
+The core functionality is driven by four color-coded action buttons, each mapped to a specific database lifecycle event:
+* 🟦 **Add Customer Button (Blue):** Collects raw text from the input fields, bundles them into a structured data tuple, and passes them to the database insertion module.
+* 🟩 **View Button (Green):** Triggers an asynchronous read command to fetch all current records from the server and instantly updates the interface grid.
+* 🟧 **Update Button (Orange):** Allows operators to modify existing records (such as changing a room number) by overwriting old data based on a unique identifier.
+* 🟥 **Delete Button (Red):** Issues a permanent remove command to wipe a selected user record out of the active database registry safely.
+
+#### C. Live Terminal Log Console
+Positioned at the baseline of the application window, this terminal display acts as a real-time data mirror. Whenever a change happens, the system immediately reflects the updated list of names, numbers, and rooms here, ensuring the operator has instant visual confirmation of successful data execution.
+
 
 ---
 
