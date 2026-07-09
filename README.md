@@ -180,11 +180,26 @@ python main.py
 
 # 📸 Application Screenshots
 
-##  🖥️ 1. Main Graphical User Interface (GUI) Detailed Overview
+## 
+
+---
+
+## ➕ Add Customer
+
+![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
+
+**Description:**  
+This screen displays the customer registration form where users can enter customer details such as name, phone number, and room number before saving the information into the MySQL database.
+
+---
+
+## 
+
+![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
+
+ 🖥️ 3. Main Graphical User Interface (GUI) Detailed Overview
 
 ![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
-
-![Main GUI]([IMAGE_LINK_HERE_FOR_SCREENSHOT_3])
 
 ### 📌 Overview
 The desktop front-end interface is engineered using Python's robust **Tkinter** library. It provides an intuitive, centralized dashboard designed specifically for hotel front-desk operators to handle real-time customer registrations, room allocations, and record management without needing to interact with raw databases.
@@ -207,26 +222,6 @@ The core functionality is driven by four color-coded action buttons, each mapped
 #### C. Live Terminal Log Console
 Positioned at the baseline of the application window, this terminal display acts as a real-time data mirror. Whenever a change happens, the system immediately reflects the updated list of names, numbers, and rooms here, ensuring the operator has instant visual confirmation of successful data execution.
 
-
----
-
-## ➕ Add Customer
-
-![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
-
-**Description:**  
-This screen displays the customer registration form where users can enter customer details such as name, phone number, and room number before saving the information into the MySQL database.
-
----
-
-## 📋 Customer Records
-
-![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
-
-**Description:**  
-This screen displays all customer records stored in the MySQL database. Users can view, update, and delete customer information efficiently.
-
----
 
 # 🔮 Future Improvements
 
