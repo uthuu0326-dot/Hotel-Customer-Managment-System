@@ -66,32 +66,6 @@ VS Code| Code Development
 
 ---
 
-📂 Project Structure
-
-Hotel-Customer-Management-System
-
-│
-├── main.py
-│   └── User Interface and Application Functions
-│
-├── database.py
-│   └── MySQL Database Connection
-│
-└── README.md
-    └── Project Documentation
-
----
-
-🗄️ Database Structure
-
-Database Name:
-
-hotel_db
-
-Table:
-
-customers
-
 Table Fields:
 
 Field| Description
@@ -150,33 +124,6 @@ python main.py
 
 5. Use the application interface to manage customer records.
 
----
-
-📸 Screenshots
-
-Home Interface
-
-(Add your application screenshot here)
-
-Screenshot 1
-
----
-
-Add Customer
-
-(Add your screenshot here)
-
-Screenshot 2
-
----
-
-Customer Database
-
-(Add your screenshot here)
-
-Screenshot 3
-
----
 
 🔮 Future Improvements
 
