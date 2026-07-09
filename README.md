@@ -178,19 +178,32 @@ python main.py
 
 ---
 
-# 📸 Screenshots
+# 📸 Application Screenshots
 
-## Home Page
+## 🏠 Home Interface
 
-(Ascreenshot/Screenshot 2026-07-09 155405.pngdd your screenshot here)
+![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
 
-## Add Customer
+**Description:**  
+This is the main interface of the Hotel Customer Management System. Users can enter customer details and access all customer management functions through a simple graphical user interface.
 
-(Add your screenshot here)
+---
 
-## Customer Records
+## ➕ Add Customer
 
-(Add your screenshot here)
+![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
+
+**Description:**  
+This screen displays the customer registration form where users can enter customer details such as name, phone number, and room number before saving the information into the MySQL database.
+
+---
+
+## 📋 Customer Records
+
+![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
+
+**Description:**  
+This screen displays all customer records stored in the MySQL database. Users can view, update, and delete customer information efficiently.
 
 ---
 
