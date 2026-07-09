@@ -196,8 +196,5 @@ Future versions can include:
 
 Developed as a Python Database Management Project.
 
----
 
-⭐ Conclusion
 
-The Hotel Customer Management System provides a simple and efficient solution for managing hotel customer information. The project demonstrates the use of Python GUI development, database connectivity, and CRUD operations in a real-world application.
