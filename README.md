@@ -182,7 +182,7 @@ python main.py
 
 ## Home Page
 
-(Add your screenshot here)
+(Ascreenshot/Screenshot 2026-07-09 155405.pngdd your screenshot here)
 
 ## Add Customer
 
