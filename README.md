@@ -182,14 +182,13 @@ python main.py
 
 
 
+![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
+
 ![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
-
-
 
 ![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
 
 
-![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
 
 
 
