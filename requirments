@@ -1,0 +1,20 @@
+📋 Requirements
+
+To run this project successfully, ensure that the following software and tools are installed on your computer.
+
+Requirement| Version| Purpose
+Python| 3.10 or above| Programming language
+MySQL| 8.0 or above| Database Management System
+XAMPP| Latest Version| Local MySQL Server
+Visual Studio Code| Latest Version| Code Editor
+mysql-connector-python| Latest Version| Python package for MySQL connectivity
+
+Install Required Python Package
+
+Run the following command in the terminal:
+
+pip install -r requirements.txt
+
+Or install the package directly:
+
+pip install mysql-connector-python
