@@ -181,16 +181,51 @@ python main.py
 # 📸 Application Screenshots
 
 
+## 🗄️ 1. Backend Database Structure
 
 ![Home Interface](screenshot/Screenshot%202026-07-09%20155306.png)
 
+* **Database Name:** `hotel_db`
+* **Table Name:** `customers`
+* **Core Management Tool:** Managed via **phpMyAdmin** dashboard for local MySQL storage (`127.0.0.1`).
+* **Database Fields:**
+  * `id`: Auto-incremented unique Primary Key.
+  * `name`: Stores the full name of the customer.
+  * `phone`: Stores the guest's contact number.
+  * `room_no`: Tracks the allocated hotel room number.
+ 
+
+
+ ## 💻 2. Source Code & Backend Logic
+
 ![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
+
+* **File Name:** `main.py`
+* **Core Framework:** Developed using Python and connected to MySQL via custom database modules.
+* **Key Functionality (`add_customer`):**
+  * Establishes a secure connection using a database cursor (`db.cursor()`).
+  * Uses **Parameterized Queries** (`%s` placeholders) to prevent SQL Injection security risks.
+  * Retrieves live inputs dynamically using `.get()` from Tkinter variables.
+  * Executes `db.commit()` to permanently save record entries to the server storage.
+
+
+
+
+## 🖥️ 3. Graphical User Interface (GUI)
 
 ![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
 
 
-
-
+* **Application Name:** Hotel Customer Management System
+* **UI Framework:** Built using Python's native **Tkinter** library.
+* **Input Fields:** Collects **Customer Name**, **Phone Number**, and **Room Number**.
+* **Control Buttons (CRUD Operations):**
+  * 🟦 **Add Customer:** Validates and saves new guest profiles to the database.
+  * 🟩 **View:** Fetches and displays the active registry list.
+  * 🟧 **Update:** Modifies existing database records dynamically.
+  * 🟥 **Delete:** Safely removes obsolete customer profiles.
+* **Live Status Log:** Displays current database records instantly at the bottom grid.
+  
 
 # 🔮 Future Improvements
 
