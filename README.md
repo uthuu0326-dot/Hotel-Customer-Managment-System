@@ -184,18 +184,48 @@ python main.py
 
 ---
 
-## ➕ Add Customer
+##  1. Backend Database Schema & Administration (phpMyAdmin)
 
 ![Add Customer](screenshot/Screenshot%202026-07-09%20155340.png)
 
-**Description:**  
-This screen displays the customer registration form where users can enter customer details such as name, phone number, and room number before saving the information into the MySQL database.
+### 📌 Overview
+To guarantee that business records are never lost when the application is closed, the system is backed by a relational **MySQL** database server running locally (`127.0.0.1`). The administration, schema structural changes, and data validation are handled through the **phpMyAdmin** web interface.
 
+### 📐 Structural Schema Analysis
+The system operates under a dedicated database called `hotel_db` containing a core operational entity named `customers`.
+
+#### Table Attributes & Constraints:
+| Column Name | Data Type | Key Type | Properties / Constraints | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | INT | Primary Key | `AUTO_INCREMENT` | A system-generated unique integer assigned to every guest to ensure no two records overlap. |
+| **name** | VARCHAR / TEXT | None | `NOT NULL` | Stores the text value of the customer's identity. |
+| **phone** | VARCHAR | None | Unique Identifier | Captures mobile/landline numbers for backend lookups. |
+| **room_no** | INT | None | `NOT NULL` | Tracks the physical asset (hotel room) allocated to that specific transaction. |
+
+### 🔍 Administrative Monitoring
+Using phpMyAdmin allows developers and systems managers to:
+* Monitor data consistency in real-time as the desktop GUI pushes changes.
+* Execute raw SQL test scripts (`SELECT * FROM customers ORDER BY name ASC`) to check performance.
+* Run immediate maintenance tasks, perform structural schema optimizations, or generate database backups (`.sql` exports).
+*
 ---
 
-## 
+## 💻 2. Source Code Architecture & Database Connectivity Logic
 
 ![Customer Records](screenshot/Screenshot%202026-07-09%20155405.png)
+
+### 📌 Overview
+The application's backend architecture is written in pure Python, separating presentation logic (Tkinter GUI components) from data persistence logic (MySQL scripts). The application communicates with the database using an abstraction layer written within `main.py` and connected modules.
+
+### 🧩 Logic Breakdown of Database Transactions (e.g., `add_customer()`)
+
+The application processes data using structured procedural pipelines to ensure safety and speed. Taking the `add_customer()` function as a case study:
+
+#### 1. Connection Initialization & Handshaking
+```python
+db = connect_db()
+cursor = db.cursor()
+
 
  🖥️ 3. Main Graphical User Interface (GUI) Detailed Overview
 
